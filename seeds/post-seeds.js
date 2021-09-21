@@ -3,12 +3,12 @@ const { Post } = require('../models');
 const postdata = [
     {
         title: 'Donec posuere metus vitae ipsum.',
-        post_url: 'google.com',
+        post_body: 'google.com',
         user_id: 1
       },
       {
         title: 'Morbi non quam nec dui luctus rutrum.',
-        post_url: 'https:google.com',
+        post_body: 'https:google.com',
         user_id: 2
       },
 ];
