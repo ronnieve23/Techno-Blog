@@ -6,12 +6,13 @@
         <div>
           <a href="/post/{{id}}" target="_blank">{{post.title}}</a>
         </div>
+         <div class="">
+        <p>{{post.post_body}}</p>
+      </div>
         <div class="meta">
           Posted by {{post.user.username}} on {{post.created_at}}
+          
         </div>
-      </div>
-      <div class="">
-        <p>{{post.post_body}}</p>
       </div>
     </article>
   </li>
