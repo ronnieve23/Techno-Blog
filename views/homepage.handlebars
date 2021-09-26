@@ -1,20 +1,7 @@
 <ul class="post">
   {{#each posts as |post|}}
   <li>
-    <article class="">
-      <div class="">
-        <div>
-          <a href="/post/{{id}}" target="_blank">{{post.title}}</a>
-        </div>
-         <div class="">
-        <p>{{post.post_body}}</p>
-      </div>
-        <div class="meta">
-          Posted by {{post.user.username}} on {{post.created_at}}
-          
-        </div>
-      </div>
-    </article>
+    {{>homepage-info post}}
   </li>
   {{/each}}
 </ul>
