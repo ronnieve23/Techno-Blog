@@ -1,13 +1,15 @@
 {{>post-info post}}
-
+<br>
 {{#if loggedIn}}
-<form class="comment-form">
+<form class="comment-form mx-auto border border-dark">
   <div>
-    <textarea name="comment-body"></textarea>
+    <h3>Add A Comment</h3>
   </div>
-
   <div>
-    <button type="submit">add comment</button>
+    <textarea placeholder="Type A Comment Here" class="form-control form-control" name="comment-body"></textarea>
+  </div>
+  <div>
+    <button class="btn btn-dark text-white form-control" type="submit">Add Comment</button>
   </div>
 </form>
 {{/if}}
