@@ -1,16 +1,14 @@
-<article class="post">
-    <div class="title">
+<article class="post mx-auto border border-dark">
+  <div class="d-flex align-items-center justify-content-between bg-dark p-1">
+    <div>
+      <a class="post-title text-decoration-none text-white" href="/post/{{id}}" target="_blank">{{title}}</a>
+    </div>
+    <div class="meta post-meta text-white">
+      Posted by {{user.username}} on {{format_date created_at}}
+    </div>
+  </div>
+  <div class="post-body">
+    <p>{{post_body}}</p>
+  </div>
 
-        <a href="/post/{{id}}">
-            <p>{{title}}</p>
-        </a>
-        <p>{{title}}</p>
-    </div>
-    <div class="meta">
-        by {{user.username}} on
-        {{format_date created_at}}
-    </div>
-    <div class="">
-        <p>{{post_body}}</p>
-    </div>
 </article>
