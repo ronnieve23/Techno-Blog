@@ -1,19 +1,18 @@
 <section>
   <h2>Create New Post</h2>
-
   <form class="new-post-form">
-    <div>
+    <div class="p-2">
       <p>Title</p>
       <input class="form-control" type="text" id="post-title" name="post-title" />
     </div>
     <div>
       <p>Write Your Post</p>
-      <input class="form-control" id="post_body" name="post_body" />
+      <input class="form-control" id="post-body" name="post-body" />
     </div>
-    <button type="submit" class="form-control btn">Create</button>
+    <button type="submit" class="form-control btn btn-dark text-white">Create</button>
   </form>
 </section>
-
+<br>
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
